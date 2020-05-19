@@ -1,5 +1,3 @@
-public class Solution {
-    public void solve() {
+class Solution {
 
-    }
 }
