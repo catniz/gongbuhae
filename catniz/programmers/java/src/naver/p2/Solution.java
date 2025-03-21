@@ -12,7 +12,7 @@ public class Solution {
         List<List<Node>> mapping = makeMapping(n, edges);
         boolean[] capitalRegion = new boolean[n + 1];
 
-        for (int capital : capitals) { // O(n * (n * log e))
+        for (int capital : capitals) { // O(n * (e * log e))
             int[] minDistances = dijkstra(capital, mapping);
             for (int i = 0; i < minDistances.length; i++) {
                 if (minDistances[i] != INVALID_DISTANCE && minDistances[i] <= k) { // 수도권 체크
